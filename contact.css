@@ -1,0 +1,315 @@
+/* Base styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #131D26;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    border-bottom: 10px solid #d98555;
+  }
+  header {
+    background-color: #082B59;
+    padding: 1rem;
+    color: white;
+  }
+  /* navbar styling */
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+  }
+  /* max width on the image in pixels */
+  nav .logo img {
+    max-width: 150px;
+  }
+  /* flex basis on the image container, li */
+  nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
+  
+  .button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #D98555;
+    color: white;
+  }
+  
+  #hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #59331d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    color: #082B59;
+    text-align: center;
+  }
+  
+  /* Products Section */
+  #products {
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  #products h2 {
+    text-align: center;
+    color: #59331d;
+  }
+  
+  #products article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #D98555;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    color: #082B59;
+    text-align: center;
+  }
+  
+  #contact a {
+    color: #59331d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /* establishes a white background */
+  .main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  /* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  
+  
+  
+  
+  /* Footer */
+  footer {
+    padding: 1rem;
+    background-color: #082B59;
+    color: white;
+    text-align: center;
+  }
+  
+  footer ul.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  footer ul.social li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    #products article {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+  
+    #contact {
+        text-align: left;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    nav ul {
+        gap: 3rem;
+    }
+  
+    #hero {
+        padding: 4rem;
+    }
+    /* Contact Page Layout */
+  #contact-page {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  /* Contact Form Styles */
+  .contact-form {
+      flex: 1;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h1 {
+      color: #59331d;
+      text-align: center;
+      margin-bottom: 1rem;
+  }
+  
+  .contact-form p {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  
+  .contact-form form label {
+      display: block;
+      font-weight: bold;
+      margin: 1rem 0 0.5rem;
+  }
+  
+  .contact-form form input,
+  .contact-form form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+  }
+  
+  .contact-form form button {
+      background-color: #59331d;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .contact-form form button:hover {
+      background-color: #d98555;
+  }
+  
+  /* Contact Card Styles */
+  .contact-card {
+      flex: 1;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
+  
+  .contact-card h2 {
+      color: #59331d;
+      margin-bottom: 1rem;
+  }
+  
+  .contact-card p {
+      margin-bottom: 1rem;
+  }
+  
+  .contact-card a {
+      color: #d98555;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+  }
+  
+  .social-icons img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+   
+  /* Footer */
+  footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #082B59;
+      color: white;
+      display: flex;
+      justify-content: center; /* Centers the text horizontally */
+      align-items: center; /* Centers the text vertically */
+      color: #f2f2f2;
+      border-top: 10px solid #d98555;
+  }
+  

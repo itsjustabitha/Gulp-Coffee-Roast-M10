@@ -1,0 +1,434 @@
+/* Base styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #131D26;
+  background-color: #f2f2f2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f2f2;
+    color: #131D26;
+}
+
+header {
+    background-color: #082B59;
+    padding: 1rem;
+    color: white;
+    border-bottom: 10px solid #FFFFFF;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 2000px; /* Adjusted height to accommodate the slideshow */
+    overflow: hidden;
+}
+
+/* Hero Section - Centered Above Slideshow */
+#hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures it spans the entire height of the slideshow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
+    color: white;
+    padding: 2rem;
+    z-index: 10; /* Ensures it appears above the slideshow images */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #59331d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #D98555;
+    color: white;
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 15; /* Ensures buttons appear above slideshow */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots */
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /* header */
+
+header {
+  border-bottom: 10px solid #d98555;
+}
+header {
+  background-color: #082B59;
+  padding: 1rem;
+  color: white;
+}
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 150px;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    position: absolute; /* Allows the section to overlay the slideshow */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    color: white; /* Ensures text is readable on the transparent background */
+    padding: 2rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#hero .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #59331d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #D98555;
+    color: white;
+}
+
+
+/* About Section */
+#about {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  color: #082B59;
+  text-align: center;
+}
+
+
+
+/* Products Section */
+#products {
+    padding: 2rem 0; /* Only top and bottom padding for the entire section */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between columns */
+    align-items: center; /* Vertically centers content in each column */
+    width: 100%; /* Ensures the section spans the full width */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+/* Left and Right Images */
+#products img {
+    flex: 1; /* Makes each image take up an equal column size */
+    max-width: 100%; /* Ensures the image fills its column width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Keeps rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    display: block; /* Ensures proper centering */
+    margin: 0 auto; /* Horizontally centers the images */
+}
+
+/* Padding for the Left Image */
+#products img:first-of-type {
+    padding-left: 1rem; /* Adds small padding to the left column image */
+}
+
+/* Padding for the Right Image */
+#products img:last-of-type {
+    padding-right: 1rem; /* Adds small padding to the right column image */
+}
+
+/* Center Column for Articles */
+#products .content {
+    flex: 1; /* Makes the content take up an equal column size */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers articles horizontally within the content */
+    justify-content: center; /* Centers articles vertically within the content */
+    text-align: center; /* Centers text within articles */
+}
+
+/* Articles in the Center */
+#products .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the articles horizontally */
+    gap: 5rem; /* Adds spacing between articles */
+}
+
+#products article {
+    margin: 0; /* Removes margin outside the article border */
+    padding: 1rem; /* Retains padding inside the article for text */
+    border: 5px solid #D98555;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 500%;
+    height: 500%;
+    max-width: 1000px; /* Limits the width of the articles */
+}
+
+
+
+/* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  padding: 1rem;
+  background-color: #082B59;
+  color: white;
+  text-align: center;
+}
+
+footer ul.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+footer ul.social li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  #products article {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+  }
+
+  #contact {
+      text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav ul {
+      gap: 3rem;
+  }
+
+  #hero {
+      padding: 4rem;
+  }
+
+  
+  footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;

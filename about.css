@@ -1,0 +1,333 @@
+/* Base styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #131D26;
+    background-color: #FFFFFF;
+}
+
+/* Header Section */
+header {
+    background-color: #082B59;
+    padding: 1rem;
+    color: white;
+    border-bottom: 10px solid #d98555;
+}
+
+/* Navbar Styling */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav li {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+}
+
+nav .logo img {
+    max-width: 150px;
+}
+
+nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: #d98555;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+}
+
+/* Base Section Styles */
+#content-sections {
+    padding: 3rem 1rem;
+    background-color: #f8f8f8;
+}
+
+/* Container for Side-by-Side Layout */
+.content-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch; /* Ensures all columns stretch to the same height */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Section Styles */
+.story-section, .about-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures images fit perfectly within the section */
+}
+
+/* Image Styling */
+.image-container {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Ensures content doesn't spill outside the container */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales proportionally and fills the column */
+}
+
+/* Text Content Styling */
+.story-section h1, .about-section h2 {
+    font-size: 2rem;
+    color: #59331d;
+    margin: 1rem;
+    text-align: center;
+}
+
+.story-section p, .about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 1rem;
+}
+
+.story-section .highlight, .about-section .highlight {
+    font-size: 1.3rem;
+    color: #d98555;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.story-section .button, .about-section .button {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.75rem 1.5rem;
+    background-color: #59331d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.story-section .button:hover, .about-section .button:hover {
+    background-color: #d98555;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .story-section, .about-section {
+        text-align: center;
+    }
+}
+
+
+
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #D98555;
+    color: white;
+}
+
+#hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #59331d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* About Section */
+#about {
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #082B59;
+    text-align: center;
+}
+
+/* Products Section */
+#products {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+#products h2 {
+    text-align: center;
+    color: #59331d;
+}
+
+#products article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #D98555;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    color: #082B59;
+    text-align: center;
+}
+
+#contact a {
+    color: #59331d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Section */
+.main-bkgd {
+    background-color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-bkgd .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #59331d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-bkgd .button:hover {
+    background-color: #D98555;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background-color: #082B59;
+    color: white;
+    text-align: center;
+    border-top: 10px solid #d98555;
+}
+
+footer address {
+    margin: 0;
+    line-height: 1.5;
+}
+
+footer ul.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+footer ul.social li a img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+footer p {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    color: #f2f2f2;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    #products article {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    #contact {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        gap: 3rem;
+    }
+
+    #hero {
+        padding: 4rem;
+    }
+
+  
+  /* establishes a white background */
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

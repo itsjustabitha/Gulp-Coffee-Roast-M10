@@ -1,0 +1,380 @@
+/* Base styles */
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #131D26;
+    background-color: #FFFFFF;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: 'Lato', sans-serif;
+      background-color: #FFFFFF;
+      color: #131D26;
+  }
+  
+  header {
+      background-color: #082B59;
+      padding: 1rem;
+      color: white;
+      border-bottom: 10px solid #FFFFFF;
+  }
+  
+  nav ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+  }
+  
+  /* Slides */
+  
+  ..slideshow-container {
+      position: relative;
+      width: 100%; /* Full width of the website */
+      max-width: none; /* Remove width restriction */
+      margin: 0 auto; /* Center the slideshow */
+      overflow: hidden;
+      height: 800px; /* Set a larger height */
+      border-radius: 0; /* Seamless look */
+      box-shadow: none; /* Optional: Remove shadow for a clean look */
+  }
+  
+  .slides img {
+      width: 100%; /* Ensures images fill the width */
+      height: 400%; /* Ensures images fill the height */
+      object-fit: cover; /* Ensures the image scales proportionally and fills the space */
+  }
+  
+  .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+      min-width: 100%;
+      height: 400px;
+  }
+  
+  .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+  }
+  
+  .prev {
+      left: 10px;
+  }
+  
+  .next {
+      right: 10px;
+  }
+  
+  .dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+  }
+  
+  .dot {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  
+  .dot.active {
+      background-color: white;
+  }
+  
+  #hero {
+      text-align: center;
+      padding: 2rem;
+      background-color: #D98555;
+      color: white;
+  }
+  
+  #hero .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #59331d;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+  }
+  
+  
+  header {
+    border-bottom: 10px solid #d98555;
+  }
+  header {
+    background-color: #082B59;
+    padding: 1rem;
+    color: white;
+  }
+  /* navbar styling */
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+  }
+  /* max width on the image in pixels */
+  nav .logo img {
+    max-width: 150px;
+  }
+  /* flex basis on the image container, li */
+  nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
+  
+  .button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #D98555;
+    color: white;
+  }
+  
+  #hero .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #59331d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    color: #082B59;
+    text-align: center;
+  }
+  
+  
+  
+  /* Products Section */
+  #products {
+      padding: 2rem 0; /* Only top and bottom padding for the entire section */
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between; /* Ensures spacing between columns */
+      align-items: flex-start; /* Aligns content at the top of each column */
+      width: 100%; /* Ensures the section spans the full width */
+      max-width: 1200px; /* Limits the overall width for better design */
+      margin: 0 auto; /* Centers the section horizontally */
+      gap: 2rem; /* Adds spacing between the two columns */
+  }
+  
+  /* Left Column (Articles + Left Image) */
+  #products .left-column {
+      flex: 1; /* Equal size for the left column */
+      display: flex;
+      flex-direction: column; /* Stacks articles and image vertically */
+      align-items: center; /* Centers content horizontally */
+      gap: 2rem; /* Adds spacing between articles and image */
+  }
+  
+  /* Articles Section */
+  #products .articles {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centers articles horizontally */
+      gap: 2rem; /* Adds spacing between articles */
+      width: 100%; /* Ensures articles span the full width of the column */
+  }
+  
+  #products article {
+      margin: 0; /* Removes extra margin outside the articles */
+      padding: 1rem; /* Padding inside the article */
+      border: 1px solid #D98555; /* Keeps the border intact */
+      border-radius: 5px; /* Rounded corners for articles */
+      background-color: #ffffff; /* Background color for articles */
+      width: 500%; /* Ensures articles span the full width */
+      max-width: 600px; /* Restricts maximum width of articles */
+  }
+  
+  /* Left Image Below Articles */
+  #products .left-column img {
+      max-width: 100%; /* Ensures the image fills the column */
+      height: auto; /* Maintains aspect ratio */
+      border-radius: 10px; /* Optional rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  }
+  
+  /* Right Column (Right Image) */
+  #products .right-column {
+      flex: 1; /* Equal size for the right column */
+      display: flex;
+      justify-content: center; /* Centers the image horizontally */
+      align-items: center; /* Centers the image vertically */
+  }
+  
+  #products .right-column img {
+      max-width: 100%; /* Ensures the image fills the column */
+      height: auto; /* Maintains aspect ratio */
+      border-radius: 10px; /* Optional rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  }
+  
+  
+  
+  /* establishes a white background */
+  .main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  /* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  
+  
+  
+  
+  /* Footer */
+  footer {
+    padding: 1rem;
+    background-color: #082B59;
+    color: white;
+    text-align: center;
+  }
+  
+  footer ul.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+  }
+  
+  footer ul.social li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    #products article {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+  
+    #contact {
+        text-align: left;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    nav ul {
+        gap: 3rem;
+    }
+  
+    #hero {
+        padding: 4rem;
+    }
+  
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+  footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
